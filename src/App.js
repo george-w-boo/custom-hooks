@@ -1,16 +1,15 @@
 import { useLocaleStorage } from "./customHooks/useLocaleStorage";
+import { useLoggerUpdate } from "./customHooks/useLoggerUpdate";
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   const [value, setValue] = useLocaleStorage("name", { name: "initial" });
+  useLoggerUpdate("name from localeStorage", value.name);
 
   const handleValue = () => {
     setValue({ name: Math.random() * 350 });
-    console.log("value", value);
   };
-
-  console.log("value", value);
 
   return (
     <div className="App">
