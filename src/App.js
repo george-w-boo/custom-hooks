@@ -1,11 +1,13 @@
+// import { useState } from "react";
 import { useLocaleStorage } from "./customHooks/useLocaleStorage";
 import { useLoggerUpdate } from "./customHooks/useLoggerUpdate";
-import logo from "./logo.svg";
+import { useToggle } from "./customHooks/useToggle";
 import "./App.css";
 
 function App() {
   const [value, setValue] = useLocaleStorage("name", { name: "initial" });
-  useLoggerUpdate("name from localeStorage", value.name);
+  const [paragraphState, toggleValue] = useToggle(false);
+  useLoggerUpdate("paragraphState", paragraphState);
 
   const handleValue = () => {
     setValue({ name: Math.random() * 350 });
@@ -14,8 +16,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p onClick={handleValue}>
+        <button type="button" onClick={() => toggleValue()}>
+          Toggle
+        </button>
+        <button type="button" onClick={() => toggleValue(true)}>
+          True
+        </button>
+        <button type="button" onClick={() => toggleValue(false)}>
+          False
+        </button>
+        <p onClick={handleValue} className={paragraphState ? "" : "false"}>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
