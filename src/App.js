@@ -4,6 +4,7 @@ import UpdateEffect from "./components/UpdateEffect";
 import LocaleStorage from "./components/LocalStorage";
 import LoggerUpdate from "./components/LoggerUpdate";
 import Debounce from "./components/Debounce";
+import ArrayComponent from "./components/useArray";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <LocaleStorage />
       <Toggle />
       <Timeout />
-      <Debounce /> */}
-      <UpdateEffect />
+      <Debounce />
+      <UpdateEffect /> */}
+      <ArrayComponent />
     </>
   );
 }
