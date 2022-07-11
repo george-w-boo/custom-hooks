@@ -4,7 +4,9 @@ import Card from "./common/Card";
 
 function UpdateEffect() {
   const [count, setCount] = useState(10)
-  useUpdateEffect(() => alert(count), [count])
+  useUpdateEffect(() => alert(count), [count]);
+
+  console.log('renders UpdateEffect');
 
   return (
     <Card legend="useUpdateEffect">
