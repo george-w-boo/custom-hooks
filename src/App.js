@@ -1,13 +1,16 @@
-// import { useState } from "react";
+import { useState } from "react";
+import { useTimeout } from "./customHooks/useTimeout";
 import { useLocaleStorage } from "./customHooks/useLocaleStorage";
 import { useLoggerUpdate } from "./customHooks/useLoggerUpdate";
 import { useToggle } from "./customHooks/useToggle";
 import "./App.css";
 
 function App() {
+  const [count, setCount] = useState(10);
+  const { clear, reset } = useTimeout(() => setCount(0), 5000);
   const [value, setValue] = useLocaleStorage("name", { name: "initial" });
   const [paragraphState, toggleValue] = useToggle(false);
-  useLoggerUpdate("paragraphState", paragraphState);
+  // useLoggerUpdate("paragraphState", paragraphState);
 
   const handleValue = () => {
     setValue({ name: Math.random() * 350 });
@@ -15,6 +18,12 @@ function App() {
 
   return (
     <div className="App">
+      <div>
+        <div>{count}</div>
+        <button onClick={() => setCount((prev) => prev + 1)}>Increment</button>
+        <button onClick={clear}>Clear Timeout</button>
+        <button onClick={reset}>Reset Timeout</button>
+      </div>
       <header className="App-header">
         <button type="button" onClick={() => toggleValue()}>
           Toggle
