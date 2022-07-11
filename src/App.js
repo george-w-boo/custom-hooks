@@ -4,13 +4,16 @@ import { useLocaleStorage } from "./customHooks/useLocaleStorage";
 import { useLoggerUpdate } from "./customHooks/useLoggerUpdate";
 import { useToggle } from "./customHooks/useToggle";
 import "./App.css";
+import { useDebounce } from "./customHooks/useDebounce";
 
 function App() {
   const [count, setCount] = useState(10);
-  const { clear, reset } = useTimeout(() => setCount(0), 5000);
+  // const { clear, reset } = useTimeout(() => setCount(0), 5000);
   const [value, setValue] = useLocaleStorage("name", { name: "initial" });
   const [paragraphState, toggleValue] = useToggle(false);
   // useLoggerUpdate("paragraphState", paragraphState);
+  // useDebounce(() => alert(count), 2000, [count]);
+  useDebounce(() => alert(count), 1000, [count]);
 
   const handleValue = () => {
     setValue({ name: Math.random() * 350 });
@@ -21,8 +24,8 @@ function App() {
       <div>
         <div>{count}</div>
         <button onClick={() => setCount((prev) => prev + 1)}>Increment</button>
-        <button onClick={clear}>Clear Timeout</button>
-        <button onClick={reset}>Reset Timeout</button>
+        {/* <button onClick={clear}>Clear Timeout</button>
+        <button onClick={reset}>Reset Timeout</button> */}
       </div>
       <header className="App-header">
         <button type="button" onClick={() => toggleValue()}>
