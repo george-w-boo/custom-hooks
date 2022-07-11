@@ -5,6 +5,7 @@ import LocaleStorage from "./components/LocalStorage";
 import LoggerUpdate from "./components/LoggerUpdate";
 import Debounce from "./components/Debounce";
 import ArrayComponent from "./components/useArray";
+import Previous from "./components/Previous";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       <Toggle />
       <Timeout />
       <Debounce />
-      <UpdateEffect /> */}
-      <ArrayComponent />
+      <UpdateEffect />
+      <ArrayComponent /> */}
+      <Previous />
     </>
   );
 }
