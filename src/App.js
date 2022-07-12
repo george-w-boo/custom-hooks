@@ -8,6 +8,7 @@ import ArrayComponent from "./components/useArray";
 import Previous from "./components/Previous";
 import StateWithHistory from "./components/StateWithhistory";
 import Async from "./components/Async";
+import Fetch from "./components/Fetch";
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
       <UpdateEffect />
       <ArrayComponent />
       <Previous />
-      <StateWithHistory /> */}
-      <Async />
+      <StateWithHistory />
+      <Async /> */}
+      <Fetch />
     </>
   );
 }
