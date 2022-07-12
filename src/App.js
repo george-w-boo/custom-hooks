@@ -6,6 +6,7 @@ import LoggerUpdate from "./components/LoggerUpdate";
 import Debounce from "./components/Debounce";
 import ArrayComponent from "./components/useArray";
 import Previous from "./components/Previous";
+import StateWithHistory from "./components/StateWithhistory";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
       <Timeout />
       <Debounce />
       <UpdateEffect />
-      <ArrayComponent /> */}
-      <Previous />
+      <ArrayComponent />
+      <Previous /> */}
+      <StateWithHistory />
     </>
   );
 }
