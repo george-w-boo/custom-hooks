@@ -27,11 +27,7 @@ export const useStateWithHistory = (initialValue, capacity = 10) => {
   );
 
   const back = useCallback(() => {
-    if (
-      pointerRef.current <= 0 ||
-      pointerRef.current > historyRef.current.length - 1
-    )
-      return;
+    if (pointerRef.current <= 0) return;
 
     pointerRef.current--;
     setValue(historyRef.current[pointerRef.current]);
