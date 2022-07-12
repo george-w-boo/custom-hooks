@@ -1,7 +1,7 @@
 import Toggle from "./components/ToggleValue";
 import Timeout from "./components/Timeout";
 import UpdateEffect from "./components/UpdateEffect";
-import LocaleStorage from "./components/LocalStorage";
+import Storage from "./components/Storage";
 import LoggerUpdate from "./components/LoggerUpdate";
 import Debounce from "./components/Debounce";
 import ArrayComponent from "./components/useArray";
@@ -11,15 +11,15 @@ import StateWithHistory from "./components/StateWithhistory";
 function App() {
   return (
     <>
-      {/* <LoggerUpdate />
-      <LocaleStorage />
-      <Toggle />
+      {/* <LoggerUpdate /> */}
+      <Storage />
+      {/* <Toggle />
       <Timeout />
       <Debounce />
       <UpdateEffect />
       <ArrayComponent />
-      <Previous /> */}
-      <StateWithHistory />
+      <Previous />
+      <StateWithHistory /> */}
     </>
   );
 }

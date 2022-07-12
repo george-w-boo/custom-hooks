@@ -21,7 +21,7 @@ export default function StateWithHistory() {
       </button>
       <button onClick={back}>Back</button>
       <button onClick={forward}>Forward</button>
-      <button onClick={() => go(-1)}>Go To Index 2</button>
+      <button onClick={() => go(2)}>Go To Index 2</button>
       <button onClick={() => setName("John")}>Change Name</button>
     </Card>
   )
