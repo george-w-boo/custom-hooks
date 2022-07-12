@@ -9,6 +9,7 @@ import Previous from "./components/Previous";
 import StateWithHistory from "./components/StateWithhistory";
 import Async from "./components/Async";
 import Fetch from "./components/Fetch";
+import EventListener from "./components/EventListener";
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
       <ArrayComponent />
       <Previous />
       <StateWithHistory />
-      <Async /> */}
-      <Fetch />
+      <Async />
+      <Fetch /> */}
+      <EventListener />
     </>
   );
 }
