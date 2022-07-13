@@ -11,6 +11,7 @@ import Async from "./components/Async";
 import Fetch from "./components/Fetch";
 import EventListener from "./components/EventListener";
 import OnScreen from "./components/OnScreen";
+import WindowSize from "./components/WindowSize";
 
 function App() {
   return (
@@ -26,8 +27,9 @@ function App() {
       <StateWithHistory />
       <Async />
       <Fetch />
-      <EventListener /> */}
-      <OnScreen />
+      <EventListener />
+      <OnScreen /> */}
+      <WindowSize />
     </>
   );
 }
