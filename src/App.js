@@ -13,6 +13,7 @@ import EventListener from "./components/EventListener";
 import OnScreen from "./components/OnScreen";
 import WindowSize from "./components/WindowSize";
 import MediaQuery from "./components/MediaQuery";
+import GeolocationComponent from "./components/Goelocation";
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
       <Fetch />
       <EventListener />
       <OnScreen />
-      <WindowSize /> */}
-      <MediaQuery />
+      <WindowSize />
+      <MediaQuery /> */}
+      <GeolocationComponent />
     </>
   );
 }
