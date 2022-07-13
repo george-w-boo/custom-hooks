@@ -16,6 +16,7 @@ import MediaQuery from "./components/MediaQuery";
 import GeolocationComponent from "./components/Goelocation";
 import StateWithValidation from "./components/StateWithValidation";
 import Size from "./components/Size";
+import ClickAwayListener from "./components/ClickAwayListener";
 
 function App() {
   return (
@@ -36,8 +37,9 @@ function App() {
       <WindowSize />
       <MediaQuery />
       <GeolocationComponent />
-      <StateWithValidation /> */}
-      <Size />
+      <StateWithValidation />
+      <Size /> */}
+      <ClickAwayListener />
     </>
   );
 }
