@@ -17,6 +17,7 @@ import GeolocationComponent from "./components/Goelocation";
 import StateWithValidation from "./components/StateWithValidation";
 import Size from "./components/Size";
 import ClickAwayListener from "./components/ClickAwayListener";
+import DarkMode from "./components/DarkMode/DarkMode";
 
 function App() {
   return (
@@ -38,8 +39,9 @@ function App() {
       <MediaQuery />
       <GeolocationComponent />
       <StateWithValidation />
-      <Size /> */}
-      <ClickAwayListener />
+      <Size />
+      <ClickAwayListener /> */}
+      <DarkMode />
     </>
   );
 }
