@@ -15,6 +15,7 @@ import WindowSize from "./components/WindowSize";
 import MediaQuery from "./components/MediaQuery";
 import GeolocationComponent from "./components/Goelocation";
 import StateWithValidation from "./components/StateWithValidation";
+import Size from "./components/Size";
 
 function App() {
   return (
@@ -34,8 +35,9 @@ function App() {
       <OnScreen />
       <WindowSize />
       <MediaQuery />
-      <GeolocationComponent /> */}
-      <StateWithValidation />
+      <GeolocationComponent />
+      <StateWithValidation /> */}
+      <Size />
     </>
   );
 }
