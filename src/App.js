@@ -12,6 +12,7 @@ import Fetch from "./components/Fetch";
 import EventListener from "./components/EventListener";
 import OnScreen from "./components/OnScreen";
 import WindowSize from "./components/WindowSize";
+import MediaQuery from "./components/MediaQuery";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
       <Async />
       <Fetch />
       <EventListener />
-      <OnScreen /> */}
-      <WindowSize />
+      <OnScreen />
+      <WindowSize /> */}
+      <MediaQuery />
     </>
   );
 }
