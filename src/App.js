@@ -10,6 +10,7 @@ import StateWithHistory from "./components/StateWithhistory";
 import Async from "./components/Async";
 import Fetch from "./components/Fetch";
 import EventListener from "./components/EventListener";
+import OnScreen from "./components/OnScreen";
 
 function App() {
   return (
@@ -24,8 +25,9 @@ function App() {
       <Previous />
       <StateWithHistory />
       <Async />
-      <Fetch /> */}
-      <EventListener />
+      <Fetch />
+      <EventListener /> */}
+      <OnScreen />
     </>
   );
 }
