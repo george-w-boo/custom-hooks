@@ -19,6 +19,7 @@ import Size from "./components/Size";
 import ClickAwayListener from "./components/ClickAwayListener";
 import DarkMode from "./components/DarkMode/DarkMode";
 import CopyToClipboardCopmponent from "./components/CopyToClipboard";
+import CookieComponent from "./components/CookieComponent";
 
 function App() {
   return (
@@ -42,8 +43,9 @@ function App() {
       <StateWithValidation />
       <Size />
       <ClickAwayListener />
-      <DarkMode /> */}
-      <CopyToClipboardCopmponent />
+      <DarkMode />
+      <CopyToClipboardCopmponent /> */}
+      <CookieComponent />
     </>
   );
 }
