@@ -21,6 +21,7 @@ import DarkMode from "./components/DarkMode/DarkMode";
 import CopyToClipboardCopmponent from "./components/CopyToClipboard";
 import CookieComponent from "./components/CookieComponent";
 import TranslationComponent from "./components/Translation/TranslationComponent";
+import OnlineStatus from "./components/OnlineStatus";
 
 function App() {
   return (
@@ -46,8 +47,9 @@ function App() {
       <ClickAwayListener />
       <DarkMode />
       <CopyToClipboardCopmponent />
-      <CookieComponent /> */}
-      <TranslationComponent />
+      <CookieComponent />
+      <TranslationComponent /> */}
+      <OnlineStatus />
     </>
   );
 }
