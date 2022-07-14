@@ -18,6 +18,7 @@ import StateWithValidation from "./components/StateWithValidation";
 import Size from "./components/Size";
 import ClickAwayListener from "./components/ClickAwayListener";
 import DarkMode from "./components/DarkMode/DarkMode";
+import CopyToClipboardCopmponent from "./components/CopyToClipboard";
 
 function App() {
   return (
@@ -40,8 +41,9 @@ function App() {
       <GeolocationComponent />
       <StateWithValidation />
       <Size />
-      <ClickAwayListener /> */}
-      <DarkMode />
+      <ClickAwayListener />
+      <DarkMode /> */}
+      <CopyToClipboardCopmponent />
     </>
   );
 }
