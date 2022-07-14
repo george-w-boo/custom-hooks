@@ -22,6 +22,7 @@ import CopyToClipboardCopmponent from "./components/CopyToClipboard";
 import CookieComponent from "./components/CookieComponent";
 import TranslationComponent from "./components/Translation/TranslationComponent";
 import OnlineStatus from "./components/OnlineStatus";
+import Hover from "./components/Hover";
 
 function App() {
   return (
@@ -48,8 +49,10 @@ function App() {
       <DarkMode />
       <CopyToClipboardCopmponent />
       <CookieComponent />
-      <TranslationComponent /> */}
+      <TranslationComponent />
       <OnlineStatus />
+      <RenderCount /> */}
+      <Hover />
     </>
   );
 }
