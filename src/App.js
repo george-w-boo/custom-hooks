@@ -23,6 +23,7 @@ import CookieComponent from "./components/CookieComponent";
 import TranslationComponent from "./components/Translation/TranslationComponent";
 import OnlineStatus from "./components/OnlineStatus";
 import Hover from "./components/Hover";
+import LongPress from "./components/LongPress";
 
 function App() {
   return (
@@ -51,8 +52,8 @@ function App() {
       <CookieComponent />
       <TranslationComponent />
       <OnlineStatus />
-      <RenderCount /> */}
-      <Hover />
+      <Hover /> */}
+      <LongPress />
     </>
   );
 }
